@@ -1,0 +1,288 @@
+html {
+  padding: 0px;
+  margin: 0px;
+}
+.first nav {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  align-items: center;
+}
+body nav .menubtn {
+  border: 1px solid white;
+  margin: 2px;
+  width: 30px;
+  margin: 0px 0px 5px 0px;
+  border-radius: 5px;
+  position: relative;
+  opacity: 1;
+}
+.btnCon {
+  width: 30px;
+  text-align: center;
+  left: 90%;
+  padding: 0px;
+  border: 0px;
+  height: 30px;
+  margin-left: auto;
+  background-color: rgba(0, 0, 0, 0);
+}
+body .first .menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  right: 30px;
+  top: 60px;
+  background-color: white;
+  max-width: 250px;
+  width: 80%;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 0px 30px 0px;
+}
+body .first .menu a {
+  text-decoration: none;
+  width: 80px;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  color: hsl(167, 40%, 24%);
+}
+body .first .menu::after {
+  position: absolute;
+  right: -15px;
+  bottom: 94%;
+  width: 0px;
+  height: 0px;
+  border: 15px solid transparent;
+  border-bottom-color: white;
+  content: "";
+  transform: rotate(135deg);
+}
+body .first .menu a:hover {
+  background-color: hsl(51, 100%, 49%);
+}
+body .first .menu a:focus {
+  color: black;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+}
+.first {
+  width: 100%;
+  height: 500px;
+  background-image: url(images/mobile/image-header.jpg);
+  background-size: 100% 100%;
+  padding: 0px 10px 0px 5px;
+  overflow: clip;
+}
+.first span {
+  display: none;
+  width: 0px;
+}
+.first h1 {
+  color: white;
+  text-align: center;
+  word-spacing: 5px;
+  letter-spacing: 5px;
+  font-size: 200%;
+  font-weight: 700;
+  margin: 70px 0px 0px 0px;
+}
+.first h2 {
+  color: white;
+  font-weight: 700;
+}
+.top img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+.top div h1,
+.top div p,
+.top div span {
+  display: block;
+  text-align: center;
+}
+#grapes {
+  background-image: url(images/mobile/image-graphic-design.jpg);
+  background-size: 100% 100%;
+  height: 500px;
+}
+#grapes p,
+#grapes h1 {
+  position: relative;
+  top: 300px;
+}
+#orange {
+  background-image: url(images/mobile/image-photography.jpg);
+  background-size: 100% 100%;
+  height: 500px;
+}
+#orange p,
+#orange h1 {
+  position: relative;
+  top: 350px;
+}
+#transform span a,
+#stand span a {
+  font-weight: 700;
+  text-decoration: none;
+  color: brown;
+}
+.center {
+  text-align: center;
+}
+.topic {
+  font-size: 100%;
+  text-align: center;
+  letter-spacing: 3px;
+}
+.center div span {
+  margin: 10px 0px -15px 0px;
+  display: block;
+  font-weight: 700;
+}
+.center div img {
+  margin: 30px 0px 20px 0px;
+  width: 80px;
+  border-radius: 40px;
+}
+.bottom {
+  border-radius: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 15px 0px 0px 0px;
+}
+.bottom img {
+  width: 100%;
+}
+.sunny {
+  font-size: 30px;
+  font-weight: 700;
+  color: hsl(167, 40%, 24%);
+}
+footer {
+  display: flex;
+  gap: 10%;
+  align-items: start;
+  margin: 0px 0px 0px -20px;
+}
+footer a {
+  text-decoration: none;
+  color: hsl(167, 40%, 24%);
+}
+footer a:hover {
+  color: white;
+}
+@media screen and (min-width: 500px) {
+  .top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
+  }
+  .top h1 {
+  }
+  .top img,
+  #orange,
+  #grapes {
+    height: 300px;
+  }
+  #orange p,
+  #grapes p,
+  #grapes h1,
+  #orange h1 {
+    top: 150px;
+  }
+  .top div {
+  }
+  .center {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  #grapes {
+    background-image: url(images/desktop/image-graphic-design.jpg);
+  }
+  #grapes p {
+    margin: 0px 20px 0px 20px;
+    padding: 0px 0px 10px 0px;
+  }
+  #orange {
+    background-image: url(images/desktop/image-photography.jpg);
+  }
+  #orange p {
+    margin: 0px 20px 0px 20px;
+  }
+  #transform {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding: 10px;
+  }
+  #stand {
+    padding: 20px;
+  }
+  #transform p,
+  #stand p,
+  #transform span,
+  #stand span,
+  #transform h1,
+  #stand h1 {
+    text-align: left;
+  }
+  #transform span,
+  #stand span {
+    text-decoration: none;
+    color: brown;
+  }
+  .bottom {
+    margin-top: 50px;
+  }
+  body .first .menu {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 60px;
+    top: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    max-width: 250px;
+    width: auto;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 0px 5px 0px;
+  }
+  body .first .menu a {
+    text-decoration: none;
+    width: auto;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+  }
+  body .first .menu::after {
+    border: 0px solid transparent;
+  }
+  body .first .menu a:hover {
+    background-color: hsla(0, 0%, 100%, 0.5);
+  }
+  body .first .menu a:focus {
+    color: black;
+  }
+  body nav .menubtn {
+    display: none;
+  }
+  .btnCon {
+    display: none;
+  }
+}
