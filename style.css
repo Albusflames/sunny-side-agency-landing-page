@@ -2,6 +2,9 @@ html {
   padding: 0px;
   margin: 0px;
 }
+body {
+  margin: 0px;
+} 
 .first nav {
   display: flex;
   width: 100%;
